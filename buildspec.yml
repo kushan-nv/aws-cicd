@@ -1,0 +1,11 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "Packaging Lambda function..."
+      - zip -r9 lambda-package.zip app.py
+
+artifacts:
+  files:
+    - lambda-package.zip
