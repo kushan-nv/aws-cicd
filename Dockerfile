@@ -1,6 +1,6 @@
-from ubuntu:latest
+FROM ubuntu:latest
 
 RUN apt update
 RUN echo "hello!"
-RUN echo "sleeping for 5 minutes!"
-RUN sleep 300
+
+ENTRYPOINT ["bash", "-c", "echo 'sleeping for 5 minutes!'; sleep 300"]
