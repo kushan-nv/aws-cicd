@@ -1,0 +1,8 @@
+version: 0.0
+resources:
+  - myLambdaFunction:
+      type: AWS::Lambda::Function
+      properties:
+        name: kushan-aws-cicd
+        currentversion: 1
+        targetversion: 2
